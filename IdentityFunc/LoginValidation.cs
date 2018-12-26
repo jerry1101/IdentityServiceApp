@@ -8,7 +8,7 @@ namespace IdentityFunc
     {
         public bool IsValidLogin(string user, string password)
         {
-            return user.Length % 2 != 0
+            return user.Length % 3 != 0
                 ? true
                 : false;
         }
