@@ -31,7 +31,7 @@ namespace IdentityFunc
             name = name ?? data?.name;
             password = password ?? data?.password;
 
-            if (name is null || password is null)
+            if (String.IsNullOrEmpty(name) || String.IsNullOrEmpty(password))
             {
                 return new BadRequestObjectResult("Please pass a non-null name/password");
             }
